@@ -28,14 +28,3 @@ spring:
     logging.level: 
         com.japan.movie: debug
   
-server:
-  port: 8081
-  
-spring:
-  output:
-    ansi:
-      enabled: always # make color
-  application:
-    name: japan
-  profiles:
-    active: default
