@@ -1,6 +1,6 @@
 spring:  
     application:
-      name: moviesquare
+      name: moviesquareservice
     servlet:
         multipart:
             max-file-size: -1
