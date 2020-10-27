@@ -1,27 +1,17 @@
 spring:  
-    application:
-      name: moviesquareservice
-    servlet:
-        multipart:
-            max-file-size: -1
-            max-request-size: -1
-    thymeleaf:
-        cache: false
-    output:
-        ansi:
-            enabled: always # make colorful
-    profiles:
-      active: default
+    application.name: moviesquareservice
+    servlet.multipart:
+        max-file-size: -1
+        max-request-size: -1
+    thymeleaf.cache: false
+    profiles.active: default
     cloud.config: enabled
    
             
 feign.client.config.default.connectTimeout: 160000000
 feign.client.config.default.readTimeout: 160000000
-
-
-  
-logging.level:
-  com.moviesquare.www: info
+spring.profiles.include : oauth2
+server.servlet.session.tracking-modes : cookie   
 
 eureka:
   instance:
@@ -32,7 +22,4 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
-spring.profiles.include : oauth2
-
-
-server.servlet.session.tracking-modes : cookie       
+    
