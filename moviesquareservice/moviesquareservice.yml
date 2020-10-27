@@ -5,7 +5,7 @@ spring:
         max-request-size: -1
     thymeleaf.cache: false
     profiles.active: default
-    cloud.config: enabled
+    cloud.config.enabled: true
    
             
 feign.client.config.default.connectTimeout: 160000000
